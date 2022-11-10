@@ -1,0 +1,78 @@
+Testing Login page 
+
+
+Given Info:
+	Identify and write automated tests for the parts you consider most important in the Login
+	page.
+	URL: https://www.phptravels.net/login
+	Email: user@phptravels.com
+	Password: demouser
+
+Feature Under test:
+	Login
+
+Done using OS: 
+	  System Version:	macOS 11.6 (20G165)
+	  Kernel Version:	Darwin 20.6.0
+
+With Browser:
+	 Google chrome Version 107.0.5304.62 (Official Build) (x86_64)
+
+
+Exploratory Testing 
+
+	Explanation: 
+		Feature exploration:
+			Possible ways of login action identified: 
+					-from login Page url path
+
+					-from Signup  - before and after user registry.
+
+					-from Landing page -  Account -> Customer Login 
+
+			For 3 Types of roles
+				Customer
+				Suplier 
+				Agent
+
+		Information gathered
+			3 Types of users identified: 
+				Customer
+					userCustomer@email.com
+					qwertyuiop
+				Suplier 
+					userSupplier@email.com
+					qwertyuiop
+				Agent
+					userAgent@email.com
+					qwertyuiop
+
+	Login Workflows identified:
+		Login Successful
+			With existent roles
+			With Remember me option enabled
+
+
+		Login Unsucssesful
+			Unregisstred User
+			Blank fill and login 
+			Blank passsword and login
+			Blank email and login 
+			Bad email format
+			Special random Chars 
+
+
+	Reset PAsssword
+		SuccessFully
+		UnsuccessFully
+			Blank Fill
+			InvalidEmail -> gives error in page 
+			
+
+
+	Others:
+		Found UI Problem after login, Page header overlaping user greeetings resource: img1_Screenshot 2022-11-07 at 16.05.58.png
+
+		Sugestions -  
+			Possibble of user deletion not found while exploratory testing.
+			Login from actions could be only one as well as regisstration 
